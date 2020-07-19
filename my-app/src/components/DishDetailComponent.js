@@ -5,10 +5,7 @@ import {
 } from "reactstrap";
 
 
-
-
-
-const RenderDish = ({ dish }) => {
+    const RenderDish = ({ dish }) => {
 
         return (
             <div className="col-12 col-md-5 m-1">
@@ -24,7 +21,7 @@ const RenderDish = ({ dish }) => {
 
     }
 
-const RenderComments = ({ comments }) => {
+    const RenderComments = ({ comments }) => {
 
         const cmnts = comments.map(comment => {
             return (
@@ -53,7 +50,7 @@ const RenderComments = ({ comments }) => {
     }
 
     const DishDetail = (props) => {
-        
+
         if (props.dish == null) {
             return (<div></div>);
         }
@@ -67,11 +64,11 @@ const RenderComments = ({ comments }) => {
                     </div>  
                 </div>
             );
-    
+
         }
     }
 
-    
+        
 
 
 export default DishDetail;
